@@ -5,9 +5,12 @@
 class Square():
     """square class"""
 
-    def __init__(self, width=0):
+    def __init__(self, width, height):
         """init method """
-        self.width = width
+        if width == height:
+            self.width = width
+        else:
+            self.width = 0
 
     def area_of_my_square(self):
         """ Area of the square """
